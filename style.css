@@ -7,11 +7,16 @@
 /* adjusting fonts */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	color: darkolivegreen;
+    Font-family: arial;
 	transition: background 500ms ease;
 }
 
-p, li {
+.cursive {
+    font-family: cursive;
+}
+
+p, li { 
 	font-size:  22px;
 	line-height: 30px;
 }
@@ -23,16 +28,24 @@ p, li {
 }
 
 h1, p {
+	color: black;
+	text-align: center;
 	margin-bottom:  20px;
 }
 
 ul, ol {
 	margin-left: 20px;
+	margin-bottom:  20px;
 }
 
 img {
 	max-width: 100%;
 	height:  auto;
+}
+
+h2, p { color: black;
+	font-weight: normal;
+	margin-bottom:  20px;
 }
 
 /* uncomment the code below to set the grid */
