@@ -188,6 +188,7 @@ body {
   background: radial-gradient(circle at 50% 70%, #f8d96a, #eec35a);
   border-radius: 50%;
   z-index: 2;
+  overflow: hidden;
 }
 
 .bear .ear.left {

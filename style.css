@@ -1,15 +1,125 @@
 * {
-	margin:  0px;
-	padding:  0px;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* adjusting fonts */
+@font-face {
+  font-family: "KulimPark";
+  src: url("KulimPark-Light.ttf");
+  font-weight: 200;
+}
 
 body {
+  font-family: "KulimPark", sans-serif;
+  font-weight: 200;
+  background-color: #FAFAFA;
+  color: #333;
+  line-height: 1.6;
+  padding: 80px clamp(5vw, 12vw, 160px);
+  background-color: #f3f3f3;
+  background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/*.container {
+  background-color: #FFFFFF;
+  padding: 32px;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: none;
+  text-align: left;
+}*/
+
+.section {
+  max-width: 720px;
+  margin: 0 auto 40px auto;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #555;
+  margin: 20px 0 12px;
+}
+
+.desc {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+ul li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  line-height: 1.5;
+}
+/*
+a {
+  color: #607D8B;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}*/
+a {
+  position: relative;
+  color: #607D8B;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 1px;
+  background: #607D8B;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+img.centered {
+  display: block;
+  margin: 24px auto;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.cursive {
+  font-family: cursive;
+}
+
+/*body {
 	color: darkolivegreen;
-    Font-family: arial;
+    Font-family: KulimPark;
 	transition: background 500ms ease;
+	 font-weight: 200;
 }
 
 .cursive {
@@ -21,7 +131,6 @@ p, li {
 	line-height: 30px;
 }
 
-/* adjusting spacing */
 
 #left-column {
 	padding: 20px;
@@ -46,7 +155,7 @@ img {
 h2, p { color: black;
 	font-weight: normal;
 	margin-bottom:  20px;
-}
+}*/
 
 /* uncomment the code below to set the grid */
 
