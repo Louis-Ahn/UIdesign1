@@ -1,0 +1,299 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ffffff, #f3f3f3);
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: visible;
+}
+
+.tray {
+  position: absolute;
+  bottom: 70px;
+  left: 30px;
+  width: 400px;
+  height: 60px;
+  background: radial-gradient(circle at center, #b88c4a, #6b4b1f);
+  border-radius: 50% / 50%;
+  box-shadow:
+    inset -5px -5px 8px rgba(255, 255, 255, 0.3),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.2),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 0;
+}
+
+.chopstick {
+  position: absolute;
+  left: 70px;
+  bottom: calc(100px + 130px);
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(to right, #f5deb3, #d2b48c);
+  border-radius: 2px;
+  transform: rotate(-15deg);
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+.cup-lid {
+  position: absolute;
+  left: 80px;
+  bottom: calc(100px + 130px - 12px);
+  width: 100px;
+  height: 25px;
+  background: radial-gradient(circle at 40% 30%, #991010, #660000);
+  border-radius: 50%;
+  z-index: 4;
+  box-shadow: 0 0 0 1px rgba(255, 160, 160, 0.3), inset 5px 5px 10px rgba(100, 0, 0, 0.2);
+}
+
+.cup-ramen {
+  position: absolute;
+  left: 80px;
+  bottom: 100px;
+  width: 100px;
+  height: 130px;
+   background:
+    radial-gradient(circle at 30% 40%, rgba(255, 120, 120, 0.4), transparent 50%),
+    radial-gradient(circle at 75% 60%, rgba(150, 0, 0, 0.3), transparent 60%),
+    linear-gradient(to bottom, #e62e2e, #7a0000);
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 20% 100%);
+  border-radius: 0 0 50% 50% / 0 0 10% 10%;
+  transform: perspective(400px) rotateX(-8deg);
+  overflow: visible;
+  z-index: 3;
+}
+
+.cup-ramen .text-shin,
+.cup-ramen .text-ramen {
+  position: absolute;
+  color: white;
+  text-shadow: 1px 1px black;
+  transform: rotate(-3deg) skewY(8deg);
+}
+
+
+.text-shin {
+  top: 30px;
+  left: 18px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.text-ramen {
+  top: 75px;
+  left: 30px;
+  font-size: 18px;
+}
+
+.apple {
+  position: absolute;
+  left: 130px;
+  bottom: 90px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 40% 40%, #b00000, #600000);
+  border-radius: 50%;
+  z-index: 3;
+  box-shadow:
+    inset -5px -5px 10px rgba(255, 60, 60, 0.4),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.apple::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 28px;
+  width: 5px;
+  height: 14px;
+  background: linear-gradient(to bottom, #3c1e1e, #1a0e0e);
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4), inset 0 1px 1px rgba(255,255,255,0.2);
+  z-index: 3;
+}
+
+.can {
+  position: absolute;
+  left: 200px;
+  bottom: 100px;
+  width: 60px;
+  height: 160px;
+  background: linear-gradient(to bottom, #0074d9, #003b80);
+  border-radius: 30px / 12px;
+  z-index: 1;
+  overflow: visible;
+}
+
+.can-top {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: radial-gradient(circle at 50% 30%, #e0f7ff, #a0c8e0);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.text-pocari {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  transform-origin: center center;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.can::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), transparent);
+  border-radius: 2px;
+}
+
+.bear {
+  position: absolute;
+  left: 270px;
+  bottom: 90px;
+  width: 100px;
+  height: 140px;
+  z-index: 2;
+}
+
+.bear .head {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 50% 70%, #f8d96a, #eec35a);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.bear .ear.left {
+  position: absolute;
+  top: -13px;
+  left: 40px;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle at 50% 70%, #f5cc50, #c18520);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.bear .ear.right {
+  position: absolute;
+  top: -10px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  background: radial-gradient(circle at 50% 70%, #f5cc50, #c18520);
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.bear .body {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 60px;
+  height: 80px;
+  background: radial-gradient(circle at 80% 50%, #ffffff 0%, #f5cc50 60%, #e0a830 100%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  z-index: 1;
+}
+
+.bear .arm.left {
+  position: absolute;
+  top: 65px;
+  left: 75px;
+  width: 35px;
+  height: 20px;
+  background: linear-gradient(to right, #c18520, #f5cc50);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.bear .arm.right {
+  position: absolute;
+  top: 72px;
+  left: 65px;
+  width: 38px;
+  height: 22px;
+  background: linear-gradient(to right, #c18520, #f5cc50);
+  border-radius: 50%;
+  z-index: 2;
+}
+.bear .foot.left {
+  position: absolute;
+  bottom: 10px;
+  left: 55px;
+  width: 45px;
+  height: 20px;
+  background: linear-gradient(to right, #c18520, #f5cc50);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.bear .foot.right {
+  position: absolute;
+  bottom: 5px;
+  left: 50px;
+  width: 45px;
+  height: 20px;
+  background: linear-gradient(to right, #c18520, #f5cc50); #e0a830);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.bear .tail {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #ffeeb0, #f2d577);
+  border-radius: 50%;
+  z-index: 0;
+}
+.bear .eye {
+  position: absolute;
+  top: 23px;
+  left: 75px;
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.bear .mouth {
+  position: absolute;
+  top: 40px;
+  left: 77px;
+  width: 12px;
+  height: 6px;
+  background: #3b2b20;
+  border-radius: 50%;
+  z-index: 3;
+}
