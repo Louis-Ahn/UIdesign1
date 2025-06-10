@@ -11,6 +11,7 @@
 }
 
 body {
+  background-attachment: fixed;
   font-family: "KulimPark", sans-serif;
   font-weight: 200;
   background-color: #FAFAFA;
@@ -19,7 +20,7 @@ body {
   padding: 80px clamp(5vw, 12vw, 160px);
   background-color: #f3f3f3;
   background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
-  background-size: 20px 20px;
+  background-size: 22px 22px;
 }
 
 /*.container {
@@ -53,6 +54,13 @@ h2 {
   margin: 20px 0 12px;
 }
 
+h3 {
+  font-size: 12px;
+  font-weight: 300;
+  color: #555;
+  margin: 20px 0 6px;
+}
+
 .desc {
   font-size: 12px;
   color: #666;
@@ -67,8 +75,8 @@ ul {
 
 ul li {
   padding: 6px 0;
-  border-bottom: 1px solid #eee;
-  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px;
   line-height: 1.5;
 }
 /*
@@ -114,6 +122,72 @@ img.centered {
 .cursive {
   font-family: cursive;
 }
+
+body.dark {
+  background: #333;
+}
+
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark ul {
+  color: #f5f5f5;
+}
+
+.pointer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 10px;
+  background: linear-gradient(to left, #ff9800, transparent);
+  border-radius: 5px;
+  pointer-events: none;
+  z-index: 10001;
+  transform: translate(-50%, -50%) rotate(0deg);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#darkmode{
+  position: fixed;
+  top: 18px;
+  right: 24px;
+  padding: 8px 12px;
+  background: transparent;
+  color: #555;  
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  font-size: 10px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  z-index: 10000;
+}
+
+#darkmode:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #444;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+body.dark #darkmode {
+  background: #2c2c2caa;
+  color: #eee;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark #darkmode:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+body.dark::after{
+  background-image: radial-gradient(#fff 0.5px, transparent 0.5px);
+}
+
 
 /*body {
 	color: darkolivegreen;
