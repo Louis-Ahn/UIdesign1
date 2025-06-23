@@ -23,17 +23,6 @@ body {
   background-size: 22px 22px;
 }
 
-/*.container {
-  background-color: #FFFFFF;
-  padding: 32px;
-  border-radius: 8px;
-  max-width: 700px;
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: none;
-  text-align: left;
-}*/
-
 .section {
   max-width: 720px;
   margin: 0 auto 40px auto;
@@ -79,16 +68,7 @@ ul li {
   font-size: 12px;
   line-height: 1.5;
 }
-/*
-a {
-  color: #607D8B;
-  text-decoration: none;
-  font-weight: 500;
-}
 
-a:hover {
-  text-decoration: underline;
-}*/
 a {
   position: relative;
   color: #607D8B;
@@ -187,70 +167,3 @@ body.dark #darkmode:hover {
 body.dark::after{
   background-image: radial-gradient(#fff 0.5px, transparent 0.5px);
 }
-
-
-/*body {
-	color: darkolivegreen;
-    Font-family: KulimPark;
-	transition: background 500ms ease;
-	 font-weight: 200;
-}
-
-.cursive {
-    font-family: cursive;
-}
-
-p, li { 
-	font-size:  22px;
-	line-height: 30px;
-}
-
-
-#left-column {
-	padding: 20px;
-}
-
-h1, p {
-	color: black;
-	text-align: center;
-	margin-bottom:  20px;
-}
-
-ul, ol {
-	margin-left: 20px;
-	margin-bottom:  20px;
-}
-
-img {
-	max-width: 100%;
-	height:  auto;
-}
-
-h2, p { color: black;
-	font-weight: normal;
-	margin-bottom:  20px;
-}*/
-
-/* uncomment the code below to set the grid */
-
-/*#grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-
-body {
-	overflow: hidden;
-}
-
-.scroll {
-	padding:  20px;
-	overflow: scroll;
-	height: 100vh;
-}
-
-#left-column {
-}
-
-#right-column {
-	background: #333;
-}*/
