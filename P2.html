@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>byfoot - Walkable Web</title>
+  <link rel="stylesheet" href="P2style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <button id="generate">경로 생성</button>
+  <div id="map"></div>
+
+<div id="sidebar">
+
+ <div id="default-sidebar-content">
+
+  <div class="sidebar-section">
+    <h2 class="sidebar-title">my location</h2>
+    <p id="location-info">위치를 불러오는 중...</p>
+  </div>
+
+  <div class="sidebar-section">
+    <h2 class="sidebar-title">todays weather is</h2>
+    <div class="info-widget">
+      <p id="weather-info">날씨를 불러오는중...</p>
+    </div>
+  </div>
+
+  <div class="sidebar-section">
+    <h2 class="sidebar-title">recommendations</h2>
+    <ul id="recommend-list">
+       <li>
+    <span class="recommend-name"></span>
+    <span class="recommend-distance"></span>
+      </li>
+    </ul>
+    </ul>
+  </div>
+ </div>
+
+ <div id="route-info" style="display: none;">
+   <h4>30분 걷기 코스</h4>
+ </div>
+
+</div>
+
+  <header>
+    <div class="logo">byfoot</div>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search">
+        <button id="search-button" class="search-icon">🔍</button>
+    </div>
+
+  </header>
+  <div class="controls">
+    <button id="btn-pet" class="button-item">w/ pet 🐕</button>
+    <button id="btn-greenery" class="button-item">greenery 🌿</button>
+    <button id="btn-running" class="button-item">running 🏃</button>
+    <button id="btn-30m" class="button-item c1">30m walk</button>
+    <button id="btn-restaurant" class="button-item c2">restaurants</button>
+    <button id="btn-cafe" class="button-item c4">cafes</button>
+    <button id="btn-convenience" class="button-item c3">convenience stores</button>
+    <button id="btn-architecture" class="button-item c6">library</button>
+    <button id="btn-photo" class="button-item c5">photo spot</button>
+    <button id="btn-plus" class="button-item plus-button">＋</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="P2javascript.js"></script>
+
+</body>
+</html>
